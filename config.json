@@ -1,6 +1,6 @@
 {
   "//": "Puter config override. Deep-merged over config.default.json.",
-  "port": 10000,
+  "port": 4100,
   "env": "prod",
   "no_devwatch": true,
   "no_browser_launch": true,
