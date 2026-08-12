@@ -1,11 +1,14 @@
 {
-  "//": "Puter config override. Deep-merged over config.default.json.",
+  "//": "Puter config override for Render deployment.",
   "port": 4100,
   "env": "prod",
   "no_devwatch": true,
   "no_browser_launch": true,
   "allow_all_host_values": true,
   "allow_no_host_header": true,
+  "jwt_secret": "47c64415056a47bf8d069feabebc8685a3f97be9e09802d6a49b6babb05e500c",
+  "jwt_secret_v2": "173077c69bbc224c57bde9e3f32c7f30e9fe5fa296442e7b9761329c0042f962",
+  "url_signature_secret": "281bc67d239576eb67d4f98ed1d2e6bc71403e214fac8b4c857e420217143a3b",
   "database": {
     "engine": "sqlite",
     "path": "/tmp/puter/puter-database.sqlite"
