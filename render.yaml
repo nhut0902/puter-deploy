@@ -1,0 +1,20 @@
+# Render Blueprint for Puter (https://puter.com) — self-hosted Internet OS.
+# Uses the official Docker image ghcr.io/heyputer/puter:latest.
+# Service will be available at https://puter-deploy.onrender.com (default subdomain).
+services:
+  - type: web
+    name: puter-deploy
+    runtime: docker
+    plan: starter
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeploy: true
+    healthCheckPath: /test
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "10000"
+      - key: PUTER_CONFIG_PATH
+        value: /etc/puter/config.json

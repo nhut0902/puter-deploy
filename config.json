@@ -1,0 +1,15 @@
+{
+  "//": "Puter config override. Deep-merged over config.default.json by the v2 loader.",
+  "http_port": 10000,
+  "host": "0.0.0.0",
+  "pubdir": "dist/gui",
+  "no_browser_launch": true,
+  "allow_insecure_localhost": true,
+  "base_domain": "puter.localhost",
+  "ui2": {
+    "enabled": false
+  },
+  "proxy": {
+    "enabled": false
+  }
+}
