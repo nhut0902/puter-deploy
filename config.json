@@ -1,10 +1,19 @@
 {
-  "//": "Puter config override. Deep-merged over config.default.json by the v2 loader.",
+  "//": "Puter config override. Deep-merged over config.default.json.",
   "port": 10000,
   "env": "prod",
   "no_devwatch": true,
   "no_browser_launch": true,
   "allow_all_host_values": true,
   "allow_no_host_header": true,
-  "allow_insecure_localhost": true
+  "database": {
+    "engine": "sqlite",
+    "path": "/tmp/puter/puter-database.sqlite"
+  },
+  "s3": {
+    "localConfig": {
+      "dataDir": "/tmp/puter/fauxqs-data",
+      "s3StorageDir": "/tmp/puter/fauxqs-s3-data"
+    }
+  }
 }
